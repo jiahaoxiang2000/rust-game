@@ -20,7 +20,13 @@ here [start paramate](https://developer.valvesoftware.com/wiki/Rust_Dedicated_Se
 
 ```bash
 # example
-./RustDedicated -batchmode +server.port 777 +rcon.port 9999 +rcon.password "YourRconPassword" +rcon.web 1 +server.tickrate 10 +server.hostname	"Your Server Name" +server.identity	"my_server_identity" +server.maxplayers	50 +server.worldsize	3000  +server.saveinterval	3000 -silent-crashes -logfile 2>&1 
+./RustDedicated -batchmode +server.port 10001 +rcon.port 9999 +rcon.password "YourRconPassword" +rcon.web 1 +server.tickrate 10 +server.hostname	"Your Server Name" +server.identity	"my_server_identity" +server.maxplayers	50 +server.worldsize	3000  +server.saveinterval	3000 -silent-crashes -logfile 2>&1 
+```
+
+### background run the server
+
+```bash
+cd ~/.local/share/Steam/rust && nohup ~/.local/share/Steam/rust/runds.sh > /home/ubuntu/rust-game/rust_server.log 2>&1 &
 ```
 
 
